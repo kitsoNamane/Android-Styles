@@ -54,7 +54,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="70dp"
-                    android:text="Welcome To RunApp!"
+                    android:text="@string/welcome_text"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="#BFBFBF"
@@ -68,14 +68,15 @@
                     android:background="@android:color/transparent"
                     android:onClick="goToApp"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/ic_start_button" />
+                    app:srcCompat="@drawable/ic_start_button"
+                    android:contentDescription="@string/todo" />
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:paddingTop="10dp"
-                    android:text="Get Started"
+                    android:text="@string/get_started"
                     android:textAlignment="center"
                     android:textColor="#BFBFBF"
                     android:textSize="30sp" />
