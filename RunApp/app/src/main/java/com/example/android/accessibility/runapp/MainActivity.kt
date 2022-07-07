@@ -16,9 +16,9 @@
 package com.example.android.accessibility.runapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
     fun goToApp(view: View) {
         // Do something in response to button
         val intent = Intent(this, TimerActivity::class.java)
