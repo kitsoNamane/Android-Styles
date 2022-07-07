@@ -7,8 +7,8 @@
     tools:context=".TimerActivity">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,8 +70,9 @@
 
                 <ImageButton
                     android:id="@+id/imageButton2"
-                    android:layout_width="221dp"
+                    android:layout_width="match_parent"
                     android:layout_height="101dp"
+                    android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:onClick="startTimer"
                     android:scaleType="fitCenter"
@@ -79,8 +80,9 @@
 
                 <ImageButton
                     android:id="@+id/imageButton3"
-                    android:layout_width="192dp"
+                    android:layout_width="match_parent"
                     android:layout_height="101dp"
+                    android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:onClick="reset"
                     android:scaleType="fitCenter"
