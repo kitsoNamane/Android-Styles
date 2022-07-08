@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_timer.*
 import java.util.*
@@ -23,6 +24,7 @@ class TimerActivity : AppCompatActivity() {
     }
 
     fun View.startTimer() {
+        findViewById<ImageButton>(R.id.start_stop_icon).setImageResource(R.drawable.ic_action_name)
         runTimer()
     }
 
@@ -35,6 +37,7 @@ class TimerActivity : AppCompatActivity() {
     private fun pause() {
         started = false
         start_label.text = "Start"
+        findViewById<ImageButton>(R.id.start_stop_icon).setImageResource(R.drawable.ic_start_button)
     }
 
     fun updateText() {
