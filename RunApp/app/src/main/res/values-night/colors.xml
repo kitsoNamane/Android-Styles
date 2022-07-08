@@ -16,9 +16,8 @@
 -->
 
 <resources>
-    <color name="colorPrimary">#B5D417</color>
-    <color name="colorAccent">#BFBFBF</color>
-    <color name="colorBackgroundTint">#75000000</color>
-    <color name="colorBackground">#75000000</color>
-    <color name="colorIcon">#BFBFBF</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorBackgroundTint">#8AA1A1A1</color>
+    <color name="colorBackground">#8AA1A1A1</color>
+    <color name="colorIcon">#F4F4F4F4</color>
 </resources>

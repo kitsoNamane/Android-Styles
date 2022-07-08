@@ -17,14 +17,6 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:background="@color/colorPrimary"
-            android:orientation="horizontal">
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
             android:layout_height="595dp"
             android:background="@drawable/background2"
             android:backgroundTint="@color/colorBackgroundTint"
@@ -41,7 +33,6 @@
                 android:paddingRight="50sp"
                 android:text="@string/running_timer"
                 android:textAlignment="center"
-                android:textColor="@color/colorAccent"
                 android:textSize="50sp" />
 
             <TextView
@@ -51,7 +42,6 @@
                 android:paddingTop="20sp"
                 android:text="@string/timer_display"
                 android:textAlignment="center"
-                android:textColor="@color/colorAccent"
                 android:textSize="60sp" />
 
             <TextView
@@ -60,7 +50,6 @@
                 android:layout_height="59dp"
                 android:text="@string/timer_units"
                 android:textAlignment="center"
-                android:textColor="@color/colorAccent"
                 android:textSize="20sp" />
 
             <LinearLayout
@@ -104,7 +93,6 @@
                     android:layout_weight="1"
                     android:text="@string/timer_start"
                     android:textAlignment="center"
-                    android:textColor="@color/colorAccent"
                     android:textSize="30sp" />
 
                 <TextView
@@ -114,7 +102,6 @@
                     android:layout_weight="1"
                     android:text="@string/timer_reset"
                     android:textAlignment="center"
-                    android:textColor="@color/colorAccent"
                     android:textSize="30sp" />
             </LinearLayout>
 
