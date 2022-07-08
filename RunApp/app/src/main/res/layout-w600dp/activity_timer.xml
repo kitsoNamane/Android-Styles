@@ -18,7 +18,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:background="#B5D417"
+            android:background="@color/colorPrimary"
             android:orientation="horizontal">
 
         </LinearLayout>
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="595dp"
             android:background="@drawable/background2"
-            android:backgroundTint="#8A000000"
+            android:backgroundTint="@color/colorBackgroundTint"
             android:backgroundTintMode="src_atop"
             android:orientation="vertical">
 
@@ -41,7 +41,7 @@
                 android:paddingRight="50sp"
                 android:text="@string/running_timer"
                 android:textAlignment="center"
-                android:textColor="#BFBFBF"
+                android:textColor="@color/colorAccent"
                 android:textSize="50sp" />
 
             <TextView
@@ -51,7 +51,7 @@
                 android:paddingTop="20sp"
                 android:text="@string/timer_display"
                 android:textAlignment="center"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/colorAccent"
                 android:textSize="60sp" />
 
             <TextView
@@ -60,7 +60,7 @@
                 android:layout_height="59dp"
                 android:text="@string/timer_units"
                 android:textAlignment="center"
-                android:textColor="#BFBFBF"
+                android:textColor="@color/colorAccent"
                 android:textSize="20sp" />
 
             <LinearLayout
@@ -76,6 +76,7 @@
                     android:background="@android:color/transparent"
                     android:onClick="startTimer"
                     android:scaleType="fitCenter"
+                    android:tint="@color/colorAccent"
                     app:srcCompat="@drawable/ic_start_button" />
 
                 <ImageButton
@@ -86,8 +87,8 @@
                     android:background="@android:color/transparent"
                     android:onClick="reset"
                     android:scaleType="fitCenter"
-                    app:tint="#EFE8E8"
-                    app:srcCompat="@drawable/reset" />
+                    app:srcCompat="@drawable/reset"
+                    app:tint="@color/colorAccent" />
 
             </LinearLayout>
 
@@ -103,7 +104,7 @@
                     android:layout_weight="1"
                     android:text="@string/timer_start"
                     android:textAlignment="center"
-                    android:textColor="#BFBFBF"
+                    android:textColor="@color/colorAccent"
                     android:textSize="30sp" />
 
                 <TextView
@@ -113,7 +114,7 @@
                     android:layout_weight="1"
                     android:text="@string/timer_reset"
                     android:textAlignment="center"
-                    android:textColor="#BFBFBF"
+                    android:textColor="@color/colorAccent"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -134,6 +135,7 @@
                     android:paddingTop="10sp"
                     android:paddingBottom="10sp"
                     android:scaleType="fitCenter"
+                    android:tint="@color/colorAccent"
                     app:srcCompat="@drawable/ic_home" />
 
                 <ImageButton
@@ -145,6 +147,7 @@
                     android:paddingTop="10sp"
                     android:paddingBottom="10sp"
                     android:scaleType="fitCenter"
+                    android:tint="@color/colorAccent"
                     app:srcCompat="@drawable/ic_timer" />
             </LinearLayout>
 
