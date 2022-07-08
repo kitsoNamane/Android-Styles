@@ -27,25 +27,20 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="1dp"
-            android:backgroundTint="#000000"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorBackgroundTint"
             android:backgroundTintMode="add"
             android:orientation="vertical"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="1dp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="#D9B5D417"
-                android:orientation="horizontal"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="632dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/background2"
-                android:backgroundTint="#75000000"
+                android:backgroundTint="@color/colorBackgroundTint"
                 android:backgroundTintMode="src_over"
                 android:orientation="vertical">
 
@@ -54,10 +49,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="70dp"
-                    android:text="Welcome To RunApp!"
+                    android:text="@string/welcome_text"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="#BFBFBF"
                     android:textSize="48sp" />
 
                 <ImageButton
@@ -66,8 +60,10 @@
                     android:layout_height="143dp"
                     android:adjustViewBounds="false"
                     android:background="@android:color/transparent"
+                    android:contentDescription="@string/todo"
                     android:onClick="goToApp"
                     android:scaleType="fitCenter"
+                    android:tint="@color/colorAccent"
                     app:srcCompat="@drawable/ic_start_button" />
 
                 <TextView
@@ -75,17 +71,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:paddingTop="10dp"
-                    android:text="Get Started"
+                    android:text="@string/get_started"
                     android:textAlignment="center"
-                    android:textColor="#BFBFBF"
                     android:textSize="30sp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="49dp"
-                android:background="#D9B5D417"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary"
                 android:orientation="horizontal"></LinearLayout>
 
         </LinearLayout>

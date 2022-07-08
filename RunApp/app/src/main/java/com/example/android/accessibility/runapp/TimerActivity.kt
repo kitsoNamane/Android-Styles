@@ -4,9 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import java.util.*
 import kotlinx.android.synthetic.main.activity_timer.*
+import java.util.*
 
 
 class TimerActivity : AppCompatActivity() {
@@ -16,22 +17,29 @@ class TimerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(com.example.android.accessibility.runapp.R.layout.activity_timer)
     }
+
     fun View.goHome() {
         val intent = Intent(this@TimerActivity, MainActivity::class.java)
         startActivity(intent)
     }
+
     fun View.startTimer() {
+        findViewById<ImageButton>(R.id.start_stop_icon).setImageResource(R.drawable.ic_action_name)
         runTimer()
     }
+
     fun View.reset() {
         time = 0
         started = false
         updateText()
     }
+
     private fun pause() {
         started = false
         start_label.text = "Start"
+        findViewById<ImageButton>(R.id.start_stop_icon).setImageResource(R.drawable.ic_start_button)
     }
+
     fun updateText() {
         val minutes: Int = time / 360000
         val secs: Int = time % 6000 / 100
@@ -44,8 +52,9 @@ class TimerActivity : AppCompatActivity() {
             )
         timer_text.text = timeString
     }
+
     private fun runTimer() {
-        if(started)   {
+        if (started) {
             return pause()
         }
         start_label.text = "Pause"
@@ -55,7 +64,7 @@ class TimerActivity : AppCompatActivity() {
             override fun run() {
                 updateText()
                 if (started) {
-                    time+=1
+                    time += 1
                     handler.postDelayed(this, 10)
                 }
             }

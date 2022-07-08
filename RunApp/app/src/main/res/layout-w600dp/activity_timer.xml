@@ -8,9 +8,9 @@
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -26,10 +26,10 @@
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
-                android:layout_height="211dp"
+                android:layout_height="wrap_content"
                 android:breakStrategy="simple"
                 android:paddingLeft="50sp"
-                android:paddingTop="50sp"
+                android:paddingTop="4sp"
                 android:paddingRight="50sp"
                 android:text="@string/running_timer"
                 android:textAlignment="center"
@@ -39,7 +39,7 @@
                 android:id="@+id/timer_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="20sp"
+                android:paddingTop="4sp"
                 android:text="@string/timer_display"
                 android:textAlignment="center"
                 android:textSize="60sp" />
@@ -59,18 +59,20 @@
 
                 <ImageButton
                     android:id="@+id/start_stop_icon"
-                    android:layout_width="221dp"
-                    android:layout_height="101dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:onClick="startTimer"
                     android:scaleType="fitCenter"
-                    android:tint="@color/colorAccent"
-                    app:srcCompat="@drawable/ic_start_button" />
+                    app:srcCompat="@drawable/ic_start_button"
+                    app:tint="@color/colorAccent" />
 
                 <ImageButton
                     android:id="@+id/imageButton3"
-                    android:layout_width="192dp"
-                    android:layout_height="101dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:onClick="reset"
                     android:scaleType="fitCenter"
@@ -87,7 +89,7 @@
                 <TextView
                     android:id="@+id/start_label"
                     android:layout_width="106dp"
-                    android:layout_height="61dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/timer_start"
                     android:textAlignment="center"
@@ -96,7 +98,7 @@
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
-                    android:layout_height="61dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/timer_reset"
                     android:textAlignment="center"
@@ -112,36 +114,36 @@
 
                 <ImageButton
                     android:id="@+id/imageButton4"
-                    android:layout_width="112dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:onClick="goHome"
                     android:paddingTop="10sp"
                     android:paddingBottom="10sp"
                     android:scaleType="fitCenter"
-                    android:tint="@color/colorAccent"
-                    app:srcCompat="@drawable/ic_home" />
+                    app:srcCompat="@drawable/ic_home"
+                    app:tint="@color/colorAccent" />
 
                 <ImageButton
                     android:id="@+id/imageButton5"
-                    android:layout_width="84dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:paddingTop="10sp"
                     android:paddingBottom="10sp"
                     android:scaleType="fitCenter"
-                    android:tint="@color/colorAccent"
-                    app:srcCompat="@drawable/ic_timer" />
+                    app:srcCompat="@drawable/ic_timer"
+                    app:tint="@color/colorAccent" />
             </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@color/colorPrimary"
+            android:layout_height="100dp"
+            android:background="#000000"
             android:orientation="horizontal">
 
         </LinearLayout>
